@@ -1,0 +1,75 @@
+#canvas {
+      grid-area: puzzle;
+      border: 0.0625em solid black;
+      /*margin: 10em 1em 1em 1em;*/
+      max-width:75%;
+      margin-left:auto;
+      margin-right:auto;
+      display:block;
+	  background-image: url("rsz_times-square_opacity.jpg");
+}
+
+
+/*#bigCanvas{
+	background-color:grey;
+}*/
+
+#stats {
+      grid-area: stats;
+      /*margin: 15em 0em 0em 0em;*/
+      display:inline;
+      height: 10em;
+}
+
+#finished {
+      grid-area: finished;
+	  max-width:75%;
+}
+img{
+	max-width:85%;
+}
+#hiddenCanvas{
+    visibility:hidden;
+}
+/*canvas {
+      border: 0.0625em solid black;
+      margin: 10em 1em 1em 1em;
+      margin-left:auto;
+      margin-right:auto;
+      display:block;
+}*/
+
+@media screen and (min-width:50em){
+	#bigCanvas {
+		display: block;
+	}
+	#canvas{
+		width:75%;
+	}
+}
+
+@media screen and (min-width:70em){
+	#bigCanvas{
+		display: grid;
+		grid-template-columns: 75% 25%;
+		grid-template-rows: auto;
+		grid-template-areas: "puzzle stats"
+					"puzzle finished"
+	}
+	#canvas{
+		width:75%;
+	}
+}
+
+@media screen and (min-width:100em){
+	#bigCanvas{
+		display: grid;
+		grid-template-columns: 75% 25%;
+		grid-template-rows: auto;
+		grid-template-areas: "puzzle stats"
+					"puzzle finished"
+	}
+	#canvas{
+		width:75%;
+	}
+}
